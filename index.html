@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanBook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 文章发布区域 -->
+  <div id="article-publish">
+    <h2>发布文章</h2>
+    <input type="text" id="article-title" placeholder="文章标题">
+    <input type="text" id="article-summary" placeholder="文章摘要">
+    <select id="article-category">
+      <option value="科技">科技</option>
+      <option value="生活">生活</option>
+      <option value="文化">文化</option>
+    </select>
+    <div id="editor"></div>
+    <button id="publish-btn">发布</button>
+  </div>
+
+  <!-- 文章筛选区域 -->
+  <div id="article-filter">
+    <h2>文章筛选</h2>
+    <select id="category-filter">
+      <option value="all">全部</option>
+      <option value="科技">科技</option>
+      <option value="生活">生活</option>
+      <option value="文化">文化</option>
+    </select>
+  </div>
+
+  <!-- 文章列表区域 -->
+  <div id="article-list"></div>
+
+  <!-- 文章详情区域 -->
+  <div id="article-detail" style="display: none;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tinymce@6/tinymce.min.js"></script>
+  <script src="editor.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
